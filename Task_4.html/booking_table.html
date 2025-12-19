@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Restaurant</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Book a Table</legend>
+        <label for="email">Enter your email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          pattern=".+@example\.com"
+          aria-invalid="false"
+        /><br /><br />
+        <label for="phone">Enter your phone number:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{11}"
+          aria-describedby="phoneformat"
+        /><br />
+        <small id="phoneformat">"Format: 11 digits"</small><br /><br />
+        <label for="reserve">Reservation Date</label><br />
+        <input type="date" id="reserve" name="reserve" /><br /><br />
+        <label for="requests">Special Requests</label><br />
+        <textarea
+          id="requests"
+          name="requests"
+          placeholder="Your Special Requests"
+        ></textarea
+        ><br /><br />
+        <button type="submit">Reserve Now</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
