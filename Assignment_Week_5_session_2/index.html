@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-now">
+        <nav>
+          <span><i class="fa-regular fa-sun"></i> Weather Now</span>
+          <div class="Unit-div">
+            <i class="fa-solid fa-gear gear-icon"></i>
+            <select id="Units">
+              <option disabled selected hidden>Units</option>
+              <option value="C">Celsius</option>
+              <option value="F">Fahrenheit</option>
+            </select>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </div>
+        </nav>
+        <div class="Search-title">
+          <div class="title">
+            <h1>How's the sky looking today?</h1>
+          </div>
+          <div class="search">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Search for a place..."
+              />
+            </div>
+            <button class="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather">
+        <div class="weather-info">
+          <div class="climate">
+            <div class="hero">
+              <div class="location">
+                <h2 class="country">Berlin, Germany</h2>
+                <h3 class="calendar">Tuesday, Aug 5, 2025</h3>
+              </div>
+              <div class="degree">
+                <span class="temp"
+                  ><i class="fa-regular fa-sun"></i>20&deg;</span
+                >
+              </div>
+            </div>
+            <div class="info">
+              <div class="secondary-info">
+                <span class="words">Feels Like</span>
+                <span class="nums">18&deg;</span>
+              </div>
+              <div class="secondary-info">
+                <span class="words">Humidity</span>
+                <span class="nums">46%</span>
+              </div>
+              <div class="secondary-info">
+                <span class="words">Wind</span>
+                <span class="nums">14 km/h</span>
+              </div>
+              <div class="secondary-info">
+                <span class="words">Precipitation</span>
+                <span class="nums">0 mm</span>
+              </div>
+            </div>
+          </div>
+          <div class="daily-forecast">
+            <span class="forecast-header">Daily forecast</span>
+            <div class="week-info">
+              <div class="week-day">
+                <div><span>Tue</span></div>
+                <i id="icon" class="fa-solid fa-cloud-rain"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">20&deg;</div>
+                  <div class="temp-num-l">14&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <span>Wed</span>
+                <i id="icon" class="fa-solid fa-cloud-rain"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">21&deg;</div>
+                  <div class="temp-num-l">15&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <div><span>Thu</span></div>
+                <i id="icon" class="fa-regular fa-sun"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">24&deg;</div>
+                  <div class="temp-num-l">14&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <span>Fri</span>
+                <i id="icon" class="fa-regular fa-cloud"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">25&deg;</div>
+                  <div class="temp-num-l">13&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <span>Sat</span>
+                <i id="icon" class="fa-solid fa-cloud-bolt"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">21&deg;</div>
+                  <div class="temp-num-l">15&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <span>Sun</span>
+                <i id="icon" class="fa-regular fa-snowflake"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">25&deg;</div>
+                  <div class="temp-num-l">16&deg;</div>
+                </div>
+              </div>
+              <div class="week-day">
+                <span>Mon</span>
+                <i id="icon" class="fa-solid fa-wind"></i>
+                <div class="temp-range">
+                  <div class="temp-num-h">24&deg;</div>
+                  <div class="temp-num-l">15&deg;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hourly-forecast">
+          <div class="hour-header">
+            <span>Hourly forecast</span>
+            <select id="Days">
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+              <option>Monday</option>
+            </select>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-cloud"></i> 3 PM</span>
+            <span>20&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-solid fa-cloud-sun"></i> 4 PM</span>
+            <span>20&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-sun"></i> 5 PM</span>
+            <span>20&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-cloud"></i> 6 PM</span>
+            <span>19&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-snowflake"></i> 7 PM</span>
+            <span>18&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-solid fa-wind"></i> 8 PM</span>
+            <span>18&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-snowflake"></i> 9 PM</span>
+            <span>17&deg;</span>
+          </div>
+          <div class="hours">
+            <span><i class="fa-regular fa-cloud"></i> 10 PM</span>
+            <span>17&deg;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+    color: white;
+    padding: 50px 0;
+    width: 75%;
+    margin: auto;
+}
+
+body {
+    background-color: #01012a;
+    margin: 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Units {
+    width: 100%;
+    background-color: #202b3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 10px 10px 45px; 
+    appearance: none;            
+    -webkit-appearance: none;     
+}
+
+
+.Unit-div {
+    position: relative; /* This makes it the anchor for the icon */
+    display: inline-block;
+    width: 150px; /* Or whatever width fits your design */
+}
+
+.gear-icon {
+    position: absolute;
+    left: 15px;         /* Move it inside the left edge */
+    top: 50%;           /* Center vertical */
+    transform: translateY(-50%); /* Perfect center alignment */
+    color: white;
+    z-index: 1;         /* Sit on top of the select */
+    pointer-events: none; /* KEY: Lets you click "through" the icon to open the menu */
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 15px; /* Stick to the right side */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 12px; /* Make it slightly smaller than the gear */
+    pointer-events: none; /* Click passes through */
+    z-index: 1;
+}
+
+.Search-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.title {
+    padding: 25px;
+}
+
+.search-bar {
+    background-color: #202b3b;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    flex-grow: 1px;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    color: white;
+}
+
+.search-box {
+  background-color: #202b3b; 
+  border-radius: 15px;
+  padding: 15px 25px;       
+  display: flex;
+  align-items: center;
+  width: 400px;             
+  gap: 15px;                
+}
+
+.search-input {
+  background: transparent;  
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  outline: none;            
+}
+
+.search-button {
+    background-color: #4b7ffb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-info {
+    width: 70%;
+    display: inline-table;
+}
+
+.climate {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+}
+
+.hourly-forecast {
+    width: 30%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #262641;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 25px
+}
+
+.hour-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#Days {
+    background-color: #3c3b5b;
+    color: white;
+    border-radius: 7px;
+    display: flex;
+    cursor: pointer;
+    min-width: 50px;
+    padding: 10px;
+}
+
+.hours {
+    background-color: #2f2f4a;
+    border-radius: 10px;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 15px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    border-radius: 10px;
+    gap: 10px;
+
+}
+
+.secondary-info {
+    background-color: #202030;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.words {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    color: #a0a0b0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.nums {
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+    padding: 0;
+}
+
+.daily-forecast {
+    display: grid;
+    
+}
+
+.hero {
+    background: linear-gradient(135deg, #5374E7, #772FDE);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 15px;
+    align-items: center;
+    
+    
+}
+
+.country {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.calendar {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.temp {
+    font-size: 80px;
+}
+
+
+
+.week-info {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    column-gap: 10px;
+}
+
+.forecast-header {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.week-day {
+    background-color: #202030;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.temp-range{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 11px;
+    padding-bottom: 0;
+}
+
+#icon {
+    display: flex;
+    font-size: 40px;
+    padding: 5px;
+
+}
+
+.temp-num-h {
+    padding-right: 15px;
+}
+
+.temp-num-l {
+    padding-left: 15px;
+}
+
+.weather {
+    gap: 15px;
+}
